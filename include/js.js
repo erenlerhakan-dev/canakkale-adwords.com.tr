@@ -20,7 +20,7 @@ const toast = document.getElementById('toast');
 document.ajax({
 url: "/include/send_request.php",
 type: 'POST',
-data: $('quoteForm').serialize(),
+data: document.getElementById('quoteForm').serialize(),
 success: function(response){
 
 if (response === "ok") {
