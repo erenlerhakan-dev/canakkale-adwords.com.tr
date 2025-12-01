@@ -16,11 +16,12 @@ document.getElementById('quoteForm').addEventListener('submit', function(e) {
 e.preventDefault();
 
 const toast = document.getElementById('toast');
+var formy = document.getElementById('quoteForm');
 
 document.ajax({
 url: "/include/send_request.php",
 type: 'POST',
-data: document.getElementById('quoteForm').serialize(),
+data: formy.serialize(),
 success: function(response){
 
 if (response === "ok") {
