@@ -29,7 +29,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="/css.css">
 
-<!-- LocalBusiness Schema Markup -->
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
@@ -67,8 +66,19 @@
 </script>
 
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6WEB9JTMBX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6WEB9JTMBX');
+</script>
+
 <body>
-<!-- Header -->
+
 <header>
 <div class="container">
 <div class="logo" title="Çanakkale AdWords - Dijital Reklam Ajansı">Çanakkale AdWords</div>
