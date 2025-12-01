@@ -406,6 +406,7 @@
 <div class="footer-section">
 <h3>Çanakkale AdWords</h3>
 <p>Çanakkale'de profesyonel dijital reklam yönetimi ile işletmenizi büyütüyoruz.</p>
+<a href="//www.dmca.com/Protection/Status.aspx?ID=6817da86-85dd-4fc0-9424-2ef9e2819ffe" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-08.png?ID=6817da86-85dd-4fc0-9424-2ef9e2819ffe"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
 </div>
 <div class="footer-section">
 <h3>Hizmetler</h3>
