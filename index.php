@@ -422,6 +422,10 @@
 <span>Mesajınız alındı! En kısa sürede sizinle iletişime geçeceğiz.</span>
 </div>
 
+<a data-hercules-id="src/components/layout/PhoneButton.tsx:5:4" data-hercules-name="a" href="tel:+905347922531" class="fixed bottom-24 right-6 z-50 bg-[#8B5CF6] hover:bg-[#7C3AED] text-white rounded-full p-4 shadow-lg transition-all hover:scale-110" title="Bizi arayın" aria-label="Telefon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-6 w-6" aria-hidden="true" data-hercules-id="src/components/layout/PhoneButton.tsx:11:6" data-hercules-name="Phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg></a>
+
+<a data-hercules-id="src/components/layout/WhatsAppButton.tsx:5:4" data-hercules-name="a" href="https://wa.me/905347922531" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-lg transition-all hover:scale-110" title="WhatsApp ile iletişime geçin" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle h-6 w-6" aria-hidden="true" data-hercules-id="src/components/layout/WhatsAppButton.tsx:13:6" data-hercules-name="MessageCircle"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg></a>
+
 <script src="/js.js"></script>
 
 </body>
