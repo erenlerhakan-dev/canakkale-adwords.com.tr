@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="/css.css">
 
 <meta name="google-site-verification" content="w5OTi2MMqbF9uODE8eRMwakJemzUR1rPxzHmb27SoY8" />
+<meta name="yandex-verification" content="cc60bedc744c05c8" />
 
 <script type="application/ld+json">
 {
