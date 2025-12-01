@@ -12,73 +12,6 @@ block: 'start'
 });
 });
 
-document.getElementById('quoteForm').addEventListener('submit', function(e) {
-e.preventDefault();
-
-const toast = document.getElementById('toast');
-var formy = document.getElementById('quoteForm');
-
-document.ajax({
-url: "/include/send_request.php",
-type: 'POST',
-data: formy.serialize(),
-success: function(response){
-
-if (response === "ok") {
-toast.html('Mesajınız alındı! En kısa sürede sizinle iletişime geçeceğiz.');
-toast.classList.add('show');
-this.reset();
-setTimeout(() => {toast.classList.remove('show');}, 5000);
-}
-
-if (response === "name") { toast.html('Lütfen adınızı yazın.');
-toast.classList.add('show');
-this.reset();
-setTimeout(() => {toast.classList.remove('show');}, 5000); 
-}
-
-if (response === "emailbad") { toast.html('Email adresiniz hatalı. Lütfen kontrol edip tekrar deneyin.');
-toast.classList.add('show');
-this.reset();
-setTimeout(() => {toast.classList.remove('show');}, 5000); 
-}
-
-if (response === "email") { toast.html('Lütfen email adresinizi yazın.');
-toast.classList.add('show');
-this.reset();
-setTimeout(() => {toast.classList.remove('show');}, 5000); 
-}
-
-if (response === "phone") { toast.html('Lütfen telefon numaranızı yazın.');
-toast.classList.add('show');
-this.reset();
-setTimeout(() => {toast.classList.remove('show');}, 5000); 
-}
-
-if (response === "message") { toast.html('Lütfen mesajınızı yazın.');
-toast.classList.add('show');
-this.reset();
-setTimeout(() => {toast.classList.remove('show');}, 5000); 
-}
-
-if (response === "message_short") { toast.html('Lütfen daha açıklayıcı bir mesaj yazın.');
-toast.classList.add('show');
-this.reset();
-setTimeout(() => {toast.classList.remove('show');}, 5000); 
-}
-
-if (response === "nok") { toast.html('Bir hata oluştu. Lütfen sayfayı yenileyip tekrar deneyin.');
-toast.classList.add('show');
-this.reset();
-setTimeout(() => {toast.classList.remove('show');}, 5000); 
-}
-
-}
-
-});
-
-});
-
 document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
 const nav = document.querySelector('nav');
 if (nav.style.display === 'flex') {
@@ -94,4 +27,81 @@ nav.style.background = 'white';
 nav.style.padding = '1rem';
 nav.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
 }
+});
+
+document.getElementById('quoteForm').addEventListener('submit', function(e) {
+    // 1. Prevent default form submission
+    e.preventDefault();
+
+    const toast = document.getElementById('toast');
+    const formy = e.target; // 'e.target' is the form that was submitted
+
+    // Function to handle the toast display
+    const showToast = (message) => {
+        toast.textContent = message; // Standard way to set text content
+        toast.classList.add('show');
+        
+        // Hide the toast after 5 seconds
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 5000);
+    };
+
+    // 2. Prepare form data for transmission
+    // 'new FormData(formy)' gathers all form inputs automatically
+    const formData = new FormData(formy);
+    
+    // Convert FormData to URLSearchParams for x-www-form-urlencoded format
+    // This format is often expected by PHP scripts receiving POST data
+    const urlEncodedData = new URLSearchParams(formData).toString();
+
+    // 3. Initiate the AJAX request using the Fetch API
+    fetch("/include/send_request.php", {
+        method: 'POST',
+        headers: {
+            // Important: This header matches the format used by form.serialize()
+            'Content-Type': 'application/x-www-form-urlencoded' 
+        },
+        body: urlEncodedData
+    })
+    .then(response => response.text()) // Convert the response stream to plain text
+    .then(responseText => {
+        // Trim any whitespace from the response text for accurate comparison
+        const response = responseText.trim(); 
+
+        // 4. Process the server response and show feedback
+        switch (response) {
+            case "ok":
+                showToast('Mesajınız alındı! En kısa sürede sizinle iletişime geçeceğiz.');
+                formy.reset(); // Standard way to reset the form
+                break;
+            case "name":
+                showToast('Lütfen adınızı yazın.');
+                break;
+            case "emailbad":
+                showToast('Email adresiniz hatalı. Lütfen kontrol edip tekrar deneyin.');
+                break;
+            case "email":
+                showToast('Lütfen email adresinizi yazın.');
+                break;
+            case "phone":
+                showToast('Lütfen telefon numaranızı yazın.');
+                break;
+            case "message":
+                showToast('Lütfen mesajınızı yazın.');
+                break;
+            case "message_short":
+                showToast('Lütfen daha açıklayıcı bir mesaj yazın.');
+                break;
+            case "nok":
+            default:
+                showToast('Bir hata oluştu. Lütfen sayfayı yenileyip tekrar deneyin.');
+                break;
+        }
+    })
+    .catch(error => {
+        // 5. Handle network or fetch-related errors
+        console.error('Fetch error:', error);
+        showToast('İletişim hatası oluştu. Lütfen ağ bağlantınızı kontrol edin.'); // Communication error
+    });
 });
