@@ -426,7 +426,7 @@
 </div>
 </div>
 <div class="footer-bottom">
-<p>&copy; <span id="year"></span> Çanakkale AdWords - Tüm hakları saklıdır. | Profesyonel Google Ads ve Dijital Reklam Yönetimi Çanakkale <br> Bir <a href="https://www.cozumcloud.com.tr">Çözüm Cloud</a> hizmetidir.</p>
+<p>&copy; <span id="year"></span> Çanakkale AdWords - Tüm hakları saklıdır. | Profesyonel Google Ads ve Dijital Reklam Yönetimi Çanakkale <br> Bir <a href="https://www.cozumcloud.com.tr" target="_blank" style="color: #64748b;">Çözüm Cloud</a> hizmetidir.</p>
 </div>
 </div>
 </footer>
