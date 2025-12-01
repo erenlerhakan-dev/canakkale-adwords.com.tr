@@ -20,6 +20,10 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.canakkale-adwords.com.tr">
 <meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Çanakkale Google Ads">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.canakkale-adwords.com.tr">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📢</text></svg>">
 
@@ -31,6 +35,8 @@
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@cozumcloud" />
+<meta name="twitter:description" content="Çanakkale'de profesyonel Google Ads, Meta Ads ve dijital reklam yönetimi. İşletmenizi online dünyada büyütün!">
+
 <meta property="og:url" content="https://www.canakkale-adwords.com.tr" />
 <meta property="og:title" content="Çanakkale Google Ads & Dijital Reklam Ajansı" />
 <meta property="og:description" content="Çanakkale'de profesyonel Google Ads, Meta Ads ve dijital reklam yönetimi. İşletmenizi online dünyada büyütün!" />
@@ -52,14 +58,22 @@
 "email": "info@cozumcloud.com.tr",
 "address": {
 "@type": "PostalAddress",
+"streetAddress": "Esenler Mh. Ahmet Piriştina Cd. No:19 Daire:17",
 "addressLocality": "Çanakkale",
 "addressRegion": "Çanakkale",
+"postalCode": "17000",
 "addressCountry": "TR"
 },
 "geo": {
 "@type": "GeoCoordinates",
 "latitude": 40.1553,
 "longitude": 26.4142
+},
+"openingHoursSpecification": {
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+"opens": "09:00",
+"closes": "18:00"
 },
 "areaServed": {
 "@type": "City",
