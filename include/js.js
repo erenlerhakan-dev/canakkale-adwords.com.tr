@@ -30,8 +30,8 @@ nav.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
 });
 
 document.getElementById('quoteForm').addEventListener('submit', function(e) {
-    // 1. Prevent default form submission
     e.preventDefault();
+document.getElementById('formbutton').html('<img src="/include/loading.svg">');
 
     const toast = document.getElementById('toast');
     const formy = e.target; // 'e.target' is the form that was submitted

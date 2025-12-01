@@ -292,7 +292,7 @@
 <label for="message">Mesajınız</label>
 <textarea id="message" name="_message" placeholder="Hangi hizmetlerimizle ilgileniyorsunuz? Bütçeniz nedir?" title="Mesajınız"></textarea>
 </div>
-<button type="submit" class="submit-btn" title="Teklif Talep Formu Gönder">Teklif Al</button>
+<button type="submit" class="submit-btn" title="Teklif Talep Formu Gönder" id="formbutton">Teklif Al</button>
 </form>
 
 </div>
