@@ -14,12 +14,30 @@ block: 'start'
 
 document.getElementById('quoteForm').addEventListener('submit', function(e) {
 e.preventDefault();
+
+$.ajax({
+url: "/send_request.php",
+type: 'POST',
+data: $('quoteForm').serialize(),
+success: function(response){
+if (response === "ok") { 
 const toast = document.getElementById('toast');
 toast.classList.add('show');
 this.reset();
 setTimeout(() => {
 toast.classList.remove('show');
 }, 5000);
+}
+if (response === "name") { swal(" ", "Lütfen adınızı yazın.", "warning"); }
+if (response === "emailbad") { swal(" ", "Email adresiniz hatalı. Lütfen kontrol edip tekrar deneyin.", "warning"); }
+if (response === "email") { swal(" ", "Lütfen email adresinizi yazın.", "warning"); }
+if (response === "phone") { swal(" ", "Lütfen telefon numaranızı yazın.", "warning"); }
+if (response === "message") { swal(" ", "Lütfen mesajınızı yazın.", "warning"); }
+if (response === "message_short") { swal(" ", "Lütfen daha açıklayıcı bir mesaj yazın.", "warning"); }
+if (response === "nok") { swal(" ", "Bir hata oluştu. Lütfen sayfayı yenileyip tekrar deneyin.", "warning"); } }
+});
+
+
 });
 
 document.querySelector('.mobile-menu-btn').addEventListener('click', function() {

@@ -269,29 +269,32 @@
 <section id="quote">
 <div class="container">
 <div class="form-card">
+
 <div class="section-title" style="margin-bottom: 2rem;">
 <h2>Ücretsiz Teklif Alın</h2>
 <p>Size özel reklam stratejisi ve fiyat teklifimizi hemen alalım. 24 saat içinde geri dönüş yapıyoruz.</p>
 </div>
+
 <form id="quoteForm">
 <div class="form-group">
 <label for="name">Ad Soyad *</label>
-<input type="text" id="name" name="name" placeholder="Adınız ve soyadınız" required title="Adınız ve soyadınız">
+<input type="text" id="name" name="_name" placeholder="Adınız ve soyadınız" required title="Adınız ve soyadınız">
 </div>
 <div class="form-group">
 <label for="email">E-posta *</label>
-<input type="email" id="email" name="email" placeholder="ornek@email.com" required title="E-posta adresiniz">
+<input type="email" id="email" name="_email" placeholder="ornek@email.com" required title="E-posta adresiniz">
 </div>
 <div class="form-group">
 <label for="phone">Telefon *</label>
-<input type="tel" id="phone" name="phone" placeholder="+90 5XX XXX XX XX" required title="Telefon numaranız">
+<input type="tel" id="phone" name="_phone" placeholder="+90 5XX XXX XX XX" required title="Telefon numaranız">
 </div>
 <div class="form-group">
 <label for="message">Mesajınız</label>
-<textarea id="message" name="message" placeholder="Hangi hizmetlerimizle ilgileniyorsunuz? Bütçeniz nedir?" title="Mesajınız"></textarea>
+<textarea id="message" name="_message" placeholder="Hangi hizmetlerimizle ilgileniyorsunuz? Bütçeniz nedir?" title="Mesajınız"></textarea>
 </div>
 <button type="submit" class="submit-btn" title="Teklif Talep Formu Gönder">Teklif Al</button>
 </form>
+
 </div>
 </div>
 </section>
