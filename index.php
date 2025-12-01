@@ -29,9 +29,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="/include/css.css">
 
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@cozumcloud" />
+<meta property="og:url" content="https://www.canakkale-adwords.com.tr" />
+<meta property="og:title" content="Çanakkale Google Ads & Dijital Reklam Ajansı" />
+<meta property="og:description" content="Çanakkale'de profesyonel Google Ads, Meta Ads ve dijital reklam yönetimi. İşletmenizi online dünyada büyütün!" />
+
 <meta name="google-site-verification" content="w5OTi2MMqbF9uODE8eRMwakJemzUR1rPxzHmb27SoY8" />
 <meta name="yandex-verification" content="cc60bedc744c05c8" />
 <meta name="msvalidate.01" content="39C3167672F703D668887F9B96E5D632" />
+<meta name='dmca-site-verification' content='OUkvVHhCOEJNS2FQbTlQYVJGZVkvdm9aWXVtY0orMXdFYmNLZEt4M2pyST01' />
 
 <script type="application/ld+json">
 {
