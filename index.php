@@ -29,6 +29,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="/css.css">
 
+<meta name="google-site-verification" content="w5OTi2MMqbF9uODE8eRMwakJemzUR1rPxzHmb27SoY8" />
+
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
