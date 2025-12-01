@@ -24,7 +24,7 @@ $emailbodytitle = "Çanakkale Adwords - ".date("d-m-Y h:i");
 
 $emailbodytext  = "Ad Soyad: ".$_name."<br>Telefon: ".$_phone."<br>Email: ".$_email."<br>Mesaj: ".$_message;
 
-$subject  = '=?UTF-8?B?'.base64_encode($email_title).'?=';
+$subject        = '=?UTF-8?B?'.base64_encode($email_title).'?=';
 
 $mail              = new PHPMailer();
 $mail->IsSMTP();
@@ -48,7 +48,7 @@ $mail->SetFrom("info@cozumcloud.com.tr", "Çözüm Cloud");
 $mail->Subject     = $subject;
 $mail->MsgHTML($emailbodytext);
 
-$address = "info@cozum.cloud";
+$address = "info@cozumcloud.com.tr";
 
 $mail->AddAddress($address);
 
