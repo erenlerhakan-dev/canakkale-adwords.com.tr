@@ -1,6 +1,6 @@
 <?php
-include_once('include/class.phpmailer.php');
-include_once('include/class.smtp.php');
+include_once('class.phpmailer.php');
+include_once('class.smtp.php');
 
 header("Content-type:text/html; charset=utf-8");
 
