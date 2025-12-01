@@ -3,3 +3,5 @@
 .but1:hover {background-color: #6b3bd9; transform: scale(1.1);}
 .but2{position: fixed;bottom: 15px;right: 15px;z-index: 50;background-color: #20ba5a;color: #fff;border-radius: 50%;padding: 13px;width: 50px;height: 50px;transition: transform .2s;}
 .but2:hover {background-color: #0f9541; transform: scale(1.1);}
+.blink_me{animation: blinker 2s linear infinite;}
+@keyframes blinker {50% {opacity: 0;}}
