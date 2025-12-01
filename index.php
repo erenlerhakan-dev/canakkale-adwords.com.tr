@@ -106,7 +106,7 @@
 </div>
 </header>
 
-<section id="home" class="hero">
+<section id="home" class="hero pt5">
 <div class="container">
 <h1>Çanakkale'de <span class="highlight">Google Ads</span> ile İşinizi Büyütün</h1>
 <p>Profesyonel dijital reklam yönetimi ile hedef kitlenize ulaşın. Google Ads, Meta Ads, Facebook, Instagram, Yandex ve LinkedIn reklamlarınızı optimize edelim.</p>
@@ -138,7 +138,7 @@
 </div>
 </section>
 
-<section class="bg-muted">
+<section class="bg-muted pt5">
 <div class="container">
 <div class="section-title">
 <h2>Dijital Reklamcılıkta <span class="highlight">Çanakkale'nin</span> Öncüsü</h2>
