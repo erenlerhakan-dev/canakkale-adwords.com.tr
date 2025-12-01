@@ -11,7 +11,7 @@ $_phone    = $_POST['_phone'];
 $_email    = $_POST['_email'];
 $_message  = $_POST['_message'];
 
-if (empty($_name)) { echo "name"; exit; }
+if (empty($_name) OR strlen($_name) < 3) { echo "name"; exit; }
 if (empty($_phone) OR strlen($_phone) < 10) { echo "phone"; exit; }
 if (!filter_var($_email, FILTER_VALIDATE_EMAIL)) { echo "emailbad"; exit; }
 if (empty($_email) OR strlen($_email) < 9) { echo "email"; exit; }
