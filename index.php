@@ -31,6 +31,7 @@
 
 <meta name="google-site-verification" content="w5OTi2MMqbF9uODE8eRMwakJemzUR1rPxzHmb27SoY8" />
 <meta name="yandex-verification" content="cc60bedc744c05c8" />
+<meta name="msvalidate.01" content="39C3167672F703D668887F9B96E5D632" />
 
 <script type="application/ld+json">
 {
