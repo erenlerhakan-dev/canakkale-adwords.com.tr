@@ -15,28 +15,66 @@ block: 'start'
 document.getElementById('quoteForm').addEventListener('submit', function(e) {
 e.preventDefault();
 
+const toast = document.getElementById('toast');
+
 $.ajax({
 url: "/send_request.php",
 type: 'POST',
 data: $('quoteForm').serialize(),
 success: function(response){
-if (response === "ok") { 
-const toast = document.getElementById('toast');
+
+if (response === "ok") {
+toast.html('Mesajınız alındı! En kısa sürede sizinle iletişime geçeceğiz.');
 toast.classList.add('show');
 this.reset();
-setTimeout(() => {
-toast.classList.remove('show');
-}, 5000);
+setTimeout(() => {toast.classList.remove('show');}, 5000);
 }
-if (response === "name") { swal(" ", "Lütfen adınızı yazın.", "warning"); }
-if (response === "emailbad") { swal(" ", "Email adresiniz hatalı. Lütfen kontrol edip tekrar deneyin.", "warning"); }
-if (response === "email") { swal(" ", "Lütfen email adresinizi yazın.", "warning"); }
-if (response === "phone") { swal(" ", "Lütfen telefon numaranızı yazın.", "warning"); }
-if (response === "message") { swal(" ", "Lütfen mesajınızı yazın.", "warning"); }
-if (response === "message_short") { swal(" ", "Lütfen daha açıklayıcı bir mesaj yazın.", "warning"); }
-if (response === "nok") { swal(" ", "Bir hata oluştu. Lütfen sayfayı yenileyip tekrar deneyin.", "warning"); } }
-});
 
+if (response === "name") { toast.html('Lütfen adınızı yazın.');
+toast.classList.add('show');
+this.reset();
+setTimeout(() => {toast.classList.remove('show');}, 5000); 
+}
+
+if (response === "emailbad") { toast.html('Email adresiniz hatalı. Lütfen kontrol edip tekrar deneyin.');
+toast.classList.add('show');
+this.reset();
+setTimeout(() => {toast.classList.remove('show');}, 5000); 
+}
+
+if (response === "email") { toast.html('Lütfen email adresinizi yazın.');
+toast.classList.add('show');
+this.reset();
+setTimeout(() => {toast.classList.remove('show');}, 5000); 
+}
+
+if (response === "phone") { toast.html('Lütfen telefon numaranızı yazın.');
+toast.classList.add('show');
+this.reset();
+setTimeout(() => {toast.classList.remove('show');}, 5000); 
+}
+
+if (response === "message") { toast.html('Lütfen mesajınızı yazın.');
+toast.classList.add('show');
+this.reset();
+setTimeout(() => {toast.classList.remove('show');}, 5000); 
+}
+
+if (response === "message_short") { toast.html('Lütfen daha açıklayıcı bir mesaj yazın.');
+toast.classList.add('show');
+this.reset();
+setTimeout(() => {toast.classList.remove('show');}, 5000); 
+}
+
+if (response === "nok") { toast.html('Bir hata oluştu. Lütfen sayfayı yenileyip tekrar deneyin.');
+toast.classList.add('show');
+this.reset();
+setTimeout(() => {toast.classList.remove('show');}, 5000); 
+}
+
+}
+
+});
 
 });
 

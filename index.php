@@ -436,7 +436,7 @@
 
 <div id="toast" class="toast">
 <i class="fas fa-check-circle"></i>
-<span>Mesajınız alındı! En kısa sürede sizinle iletişime geçeceğiz.</span>
+<span id="aletmess"></span>
 </div>
 
 <a href="tel:+905347922531" class="but1" title="Bizi arayın" aria-label="Telefon">
