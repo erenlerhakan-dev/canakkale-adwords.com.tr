@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="/css.css">
+<link rel="stylesheet" href="/include/css.css">
 
 <meta name="google-site-verification" content="w5OTi2MMqbF9uODE8eRMwakJemzUR1rPxzHmb27SoY8" />
 <meta name="yandex-verification" content="cc60bedc744c05c8" />
@@ -447,7 +447,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
 </a>
 
-<script src="/js.js"></script>
+<script src="/include/js.js"></script>
 
 </body>
 </html>

@@ -18,7 +18,7 @@ e.preventDefault();
 const toast = document.getElementById('toast');
 
 $.ajax({
-url: "/send_request.php",
+url: "/include/send_request.php",
 type: 'POST',
 data: $('quoteForm').serialize(),
 success: function(response){

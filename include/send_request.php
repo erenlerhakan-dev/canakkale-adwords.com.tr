@@ -6,21 +6,10 @@ header("Content-type:text/html; charset=utf-8");
 
 if (!empty($_POST)) {
 
-$_serv     = $_POST['_serv'];
 $_name     = $_POST['_name'];
 $_phone    = $_POST['_phone'];
-$_city     = $_POST['_city'];
 $_email    = $_POST['_email'];
-$_company  = $_POST['_company'];
 $_message  = $_POST['_message'];
-
-if(!empty($_serv)) {
-$serv  = "";
-foreach ($_serv as $value) {
-$serv .= $value.", ";
-}
-$_serv = rtrim($serv, ", ");
-}
 
 if (empty($_name)) { echo "name"; exit; }
 if (empty($_phone) OR strlen($_phone) < 10) { echo "phone"; exit; }
@@ -30,10 +19,10 @@ if (empty($_message)) { echo "message"; exit; }
 if (strlen($_message) < 15) { echo "message_short"; exit; }
 
 
-$email_title    = "Siteden Gelen - ".date("d-m-Y h:i");
-$emailbodytitle = "Siteden Gelen - ".date("d-m-Y h:i");
+$email_title    = "Çanakkale Adwords - ".date("d-m-Y h:i");
+$emailbodytitle = "Çanakkale Adwords - ".date("d-m-Y h:i");
 
-$emailbodytext  = "Ad Soyad: ".$_name."<br>Telefon: ".$_phone."<br>Email: ".$_email."<br>Şehir: ".$_city."<br>Mesaj: ".$_message."<br>Hizmet: ".$_serv;
+$emailbodytext  = "Ad Soyad: ".$_name."<br>Telefon: ".$_phone."<br>Email: ".$_email."<br>Mesaj: ".$_message;
 
 $subject  = '=?UTF-8?B?'.base64_encode($email_title).'?=';
 
@@ -49,7 +38,7 @@ $mail->SMTPOptions = array(
                     'allow_self_signed' => true
                     )
                     );
-$mail->SMTPSecure  = "SSL";
+$mail->SMTPSecure  = "TLS";
 $mail->Host        = "smtppro.zoho.eu";
 $mail->Port        = 465;
 $mail->Username    = "info@cozumcloud.com.tr";
