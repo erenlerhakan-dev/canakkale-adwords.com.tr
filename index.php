@@ -421,7 +421,7 @@
 <ul>
 <li><i class="fas fa-phone"></i> <a href="tel:+905347922531" title="Telefon: +90 534 792 25 31">+90 534 792 25 31</a></li>
 <li><i class="fas fa-envelope"></i> <a href="mailto:info@cozumcloud.com.tr" title="E-posta: info@cozumcloud.com.tr">info@cozumcloud.com.tr</a></li>
-<li><i class="fas fa-map-marker-alt"></i> Çanakkale, Türkiye</li>
+<li><i class="fas fa-map-marker-alt"></i> Esenler Mh. Ahmet Piriştina Cd. No:19 Daire:17 Çanakkale, Türkiye</li>
 </ul>
 </div>
 </div>
