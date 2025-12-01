@@ -38,7 +38,7 @@ $mail->SMTPOptions = array(
                     'allow_self_signed' => true
                     )
                     );
-$mail->SMTPSecure  = "TLS";
+$mail->SMTPSecure  = "SSL";
 $mail->Host        = "smtppro.zoho.eu";
 $mail->Port        = 465;
 $mail->Username    = "info@cozumcloud.com.tr";
