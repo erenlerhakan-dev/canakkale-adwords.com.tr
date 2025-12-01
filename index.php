@@ -407,9 +407,12 @@
 <h3>Çanakkale AdWords</h3>
 <p>Çanakkale'de profesyonel dijital reklam yönetimi ile işletmenizi büyütüyoruz.</p>
 <br>
+
+<div>
 <a href="//www.dmca.com/Protection/Status.aspx?ID=6817da86-85dd-4fc0-9424-2ef9e2819ffe" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-05.png?ID=6817da86-85dd-4fc0-9424-2ef9e2819ffe"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
 <br>
-<img src="/include/cozumcloudqrcode.png" style="width:50%;">
+<img src="/include/cozumcloudqrcode.png" style="width:35%;">
+</div>
 
 </div>
 <div class="footer-section">
